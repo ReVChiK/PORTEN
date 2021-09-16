@@ -1,0 +1,724 @@
+//font-family: 'PT Sans', sans-serif;
+
+$max_width: 1920px;
+$container_width: 1110px;
+
+.top-header{
+    max-width: $max_width;
+    height: 44px;
+    background-color: #000;
+
+    .container{
+        width: $container_width;
+        margin: 0 auto;
+
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 9px;
+
+            .tel-icon{
+                img{
+                    width: 13px;
+                    height: 13px;
+                }
+            }
+
+            .info{
+                display: flex;
+                margin-right: 620px;
+                font-family: 'PT Sans', sans-serif;
+                font-size: 12px;
+                color: #969696;
+
+                .info-days{
+                    margin-left: 10px;
+
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        width: 1px;
+                        height: 8px;
+                        background-color: #969696;
+                        margin-right: 10px;
+                    }
+                }
+
+                .time{
+                    margin-left: 10px;
+
+                    &:before{
+                        content: "";
+                        display: inline-block;
+                        width: 1px;
+                        height: 8px;
+                        background-color: #969696;
+                        margin-right: 10px;
+                    }
+                }
+            }
+
+            .registration-panel{
+                .login-button{
+                    button{
+                        outline: none;
+                        border: none;
+                        background-color: unset;
+                        margin-top: 5px;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            .registration{
+                .registration-text{
+                    font-family: 'PT Sans', sans-serif;
+                    font-size: 12px;
+                    color: #969696;
+                }
+            }
+        }
+    }
+}
+
+.main-header{
+    max-width: $max_width;
+    height: 80px;
+    background-color: #0F0F0F;
+
+    .container{
+        width: $container_width;
+        margin: 0 auto;
+
+        .items{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .brand{
+                .name_brand{
+                    color: #fff;
+                    font-size: 36px;
+                    text-transform: uppercase;
+                    font-family: "PostNoBillsJaffna-Bold";
+                    font-weight: 700;
+                    font-style: normal;
+                }
+            }
+
+            .nav{
+                display: flex;
+                margin-left: 410px;
+
+                .item_navigation{
+
+                    button{
+                        outline: none;
+                        border: none;
+                        color: white;
+                        padding: 31px 20px;
+                        font-family: 'PT Sans', sans-serif;
+                        text-transform: uppercase;
+                        background-color: unset;
+                        padding-right: 20px;
+                        font-size: 14px;
+                        transition: all .2s ease-in-out;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+
+                    .active{
+                        background-color: #1f1f1f;
+                    }
+                }
+            }
+
+            .icons-for-product{
+                display: flex;
+
+                .product__icons_basket{
+
+                    margin-right: 42.75px;
+
+                    button{
+                        outline: none;
+                        border: none;
+                        background-color: unset;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                .product__icons_search{
+                    button{
+                        outline: none;
+                        border: none;
+                        background-color: unset;
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.main_page{
+    max-width: $max_width;
+    background: url('images/other/fon-main_page.png') no-repeat;
+    min-height: 810px;
+
+    .main_page__block_text{
+        padding-top: 160px;
+        padding-left: 800px;
+
+        .title_text{
+            text-transform: uppercase;
+            font-family: 'PostNoBillsJaffna-Bold';
+            font-weight: 700;
+            font-size: 64px;
+            color: white;
+            border: 4px solid #fff;
+            box-sizing: border-box;
+            width: 320px;
+            height: 320px;
+            text-align: center;
+            padding: 93px 68px 141px 67px;
+            line-height: 1;
+
+            .sub_text{
+                font-family: 'PT Sans', sans-serif;
+                font-size: 21px;
+                font-weight: normal;
+                font-style: normal;
+
+                &:before{
+                    content: "";
+                    display: block;
+                    width: 179px;
+                    height: 2px;
+                    background-color: white;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+
+    .main_page__sub_block_text{
+        width: 730px;
+        height: 96px;
+        margin: 0 auto;
+        margin-top: 80px;
+
+        .text{
+            font-family: 'PT Sans', sans-serif;
+            color: white;
+            text-transform: uppercase;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.5;
+        }
+    }
+}
+
+//font-family: 'Playfair Display', serif;
+.season{
+    max-width: $max_width;
+
+    .seasons_blocks{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .season-block{
+            width: 1040px;
+            height: 730px;
+            background-color: #000;
+
+            .season__title{
+                font-family: 'Playfair Display', serif;
+                color: white;
+                text-transform: uppercase;
+                font-size: 36px;
+                font-weight: 700;
+                text-align: center;
+                padding-top: 93px;
+
+                &::after{
+                    content: "";
+                    display: block;
+                    width: 120px;
+                    height: 1px;
+                    background-color: white;
+                    margin: 0 auto;
+                    margin-top: 50px;
+                    margin-bottom: 50px;
+                }
+            }
+
+            .season_items{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .item{
+                    .item_img{
+                        img{
+                            background-color:#191B1C;
+                            padding: 55px 23px 56px 22px;
+                        }
+
+                        .item_img__text{
+                            color: white;
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 400;
+                            font-style: normal;
+                            font-size: 18px;
+                            margin-top: 25px;
+
+                            .item__text_sub{
+                                color: #D0D0D0;
+                                font-weight: 700;
+                                font-size: 16px;
+                                margin-top: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .collection{
+            width: 880px;
+            height: 730px;
+            background: url('images/other/img_catalog.png');
+
+            .collection__block_title{
+                padding-top: 484px;
+
+                .title_text{
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 700;
+                    color: white;
+                    font-style: normal;
+                    text-transform: uppercase;
+                    font-size: 36px;
+                    text-align: center;
+
+                    .collection__block_button{
+
+                        &:before{
+                            content: "";
+                            display: block;
+                            width: 120px;
+                            height: 1px;
+                            background-color: white;
+                            margin: 0 auto;
+                            margin-top: 20px;
+                            margin-bottom: 20px;
+                        }
+
+                        button{
+                            font-family: 'PT Sans', sans-serif;
+                            color: white;
+                            text-transform: uppercase;
+                            outline: none;
+                            border: 1px solid white;
+                            background-color: unset;
+                            font-weight: 400;
+                            font-size: 18px;
+                            padding: 12px 28px;
+                            transition: background-color .2s ease-in-out;
+
+                            &:hover{
+                                cursor: pointer;
+                                background-color: gray;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.collection{
+    max-width: $max_width;
+
+    .collection__blocks{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .collection-item-img{
+            width: 880px;
+            height: 600px;
+        }
+
+        .collection-item{
+            background-color: #000;
+
+            .collection-content{
+                width: 1040px;
+                height: 600px;
+
+                .item-title{
+                    font-family: 'Playfair Display', serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 36px;
+                    color: white;
+                    text-transform: uppercase;
+                    text-align: center;
+                    padding-top: 100px;
+
+                    &::after{
+                        content: "";
+                        display: block;
+                        width: 120px;
+                        height: 1px;
+                        background-color: white;
+                        margin: 0 auto;
+                        margin-top: 40px;
+                        margin-bottom: 40px;
+                    }
+                }
+
+                .item-sub-title{
+                    font-family: 'PT Sans', sans-serif;
+                    font-weight: 400;
+                    font-style: normal;
+                    font-size: 14px;
+                    width: 471px;
+                    color: white;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+
+                .item__button{
+                    width: 311px;
+                    border: 1px solid white;
+                    margin: 0 auto;
+                    text-align: center;
+                    margin-top: 61px;
+                    transition: all .2s ease-in-out;
+
+                    &:hover{
+                        background-color: #191B1C;
+                    }
+
+                    .button{
+                        outline: none;
+                        border: none;
+                        background-color: unset;
+                        font-family: 'PT Sans', sans-serif;
+                        font-weight: 400;
+                        font-size: 18px;
+                        color: white;
+                        text-transform: uppercase;
+                        padding: 12px 28px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.block-products{
+    max-width: $max_width;
+    background-color: #000;
+
+    .container{
+        width: $container_width;
+        margin: 0 auto;
+
+        .products-title{
+            font-family: 'Playfair Display', serif;
+            color: white;
+
+            .title{
+                font-weight: 700;
+                font-size: 36px;
+                text-transform: uppercase;
+                text-align: center;
+                padding-top: 120px;
+
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 120px;
+                    height: 1px;
+                    background-color: white;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    margin-bottom: 81px;
+                }
+            }
+        }
+
+        .products{
+            padding-bottom: 110px;
+
+            .products__items{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+
+                .items{
+                    color: white;
+
+                    .item__block-image{
+                        background-color: #191B1C;
+
+                        .img{
+                            padding: 55px 23px 56px 22px;
+                        }
+                    }
+
+                    .name-product{
+                        .name{
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 400;
+                            font-size: 18px;
+                            margin-top: 25px;
+                        }
+                    }
+
+                    .price-product{
+                        .price{
+                            font-family: 'Playfair Display', serif;
+                            font-weight: 700;
+                            font-size: 16px;
+                            margin-top: 10px;
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.our-brands{
+    max-width: $max_width;
+    background-color: #0F0F0F;
+
+    .container{
+        width: $container_width;
+        margin: 0 auto;
+
+        .brands-title{
+            font-family: 'Playfair Display', serif;
+            color: white;
+
+            .title{
+                font-weight: 700;
+                text-transform: uppercase;
+                font-size: 36px;
+                text-align: center;
+                padding-top: 60px;
+
+                &:after{
+                    content: "";
+                    display: block;
+                    width: 120px;
+                    height: 1px;
+                    background-color: white;
+                    margin: 0 auto;
+                    margin-top: 40px;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+
+        .brands{
+            .brands-items{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-bottom: 74px;
+
+                .item-img{
+                    margin: 0 30px;
+                }
+            }
+        }
+    }
+}
+
+.footer{
+    max-width: $max_width;
+    background: url('images/other/footer.png');
+
+    .container{
+        width: $container_width;
+        margin: 0 auto;
+        height: 400px;
+
+        .footer__elements{
+            display: flex;
+            justify-content: space-between;
+            //align-items: center;
+
+            .footer-shop{
+                font-family: 'Playfair Display', serif;
+
+                .footer-shop__title{
+                    font-weight: 400;
+                    color: white;
+
+                    .shop__title{
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        padding-top: 80px;
+
+                        .shop-info{
+                            font-family: 'PT Sans', sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            .info{
+                                width: 350px;
+                                text-transform: none;
+                                font-size: 14px;
+                                line-height: 21px;
+                                margin-top: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-category{
+                font-family: 'Playfair Display', serif;
+
+                .footer-category__title{
+                    font-weight: 400;
+                    color: white;
+
+                    .category__title{
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        padding-top: 75px;
+
+                        .category__buttons{
+                            display: flex;
+
+                            .buttons-line{
+                                font-family: 'PT Sans', sans-serif;
+                                font-weight: 400;
+                                margin-top: 40px;
+                                margin-right: 20px;
+
+                                .button{
+                                    color: #D0D0D0;
+                                    background-color:#0F0F0F;
+                                    outline: none;
+                                    border: none;
+                                    padding: 10px 20px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+
+                        .category__buttons_line_2{
+                            display: flex;
+                            margin-top: 20px;
+
+                            .buttons-line{
+                                font-family: 'PT Sans', sans-serif;
+                                font-weight: 400;
+                                margin-right: 20px;
+
+                                .button{
+                                    color: #D0D0D0;
+                                    background-color:#0F0F0F;
+                                    outline: none;
+                                    border: none;
+                                    padding: 10px 20px;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .footer-mailing{
+                font-family: 'Playfair Display', serif;
+
+                .footer-mailing__title{
+                    font-weight: 400;
+                    color: white;
+
+                    .mailing__title{
+                        font-size: 24px;
+                        text-transform: uppercase;
+                        padding-top: 70px;
+
+                        .mailing__sub_title{
+                            font-family: 'PT Sans', sans-serif;
+                            font-weight: 400;
+                            font-style: normal;
+
+                            .title__sub{
+                                width: 350px;
+                                font-size: 14px;
+                                text-transform: none;
+                                line-height: 21px;
+                                margin-top: 40px;
+
+                                .mailing-form{
+                                    font-family: 'PT Sans', sans-serif;
+                                    display: flex;
+                                    color: white;
+                                    margin-top: 35px;
+
+                                    .form__input{
+
+                                        .input-email{
+                                            outline: none;
+                                            border: none;
+                                            background-color: #1f1f1f;
+                                            padding: 15px 0 15px 20px;
+                                            color: white;
+                                        }
+                                    }
+
+                                    .mailing-form__button{
+                                        background-color: #0F0F0F;
+
+                                        .button{
+                                            width: 140px;
+                                            text-transform: uppercase;
+                                            color: white;
+                                            font-weight: 400;
+                                            font-size: 14px;
+                                            background-color: unset;
+                                            outline: none;
+                                            border: none;
+                                            text-align: center;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
